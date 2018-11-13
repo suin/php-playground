@@ -1,0 +1,66 @@
+{
+    "name": "suin/php-playground",
+    "type": "library",
+    "description": "Suin's PHP playground.",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "suin",
+            "email": "suinyeze@gmail.com",
+            "homepage": "https://github.com/suin",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.1 <7.4.0"
+    },
+    "require-dev": {
+        "brainmaestro/composer-git-hooks": ">=2.5 <3.0.0",
+        "friendsofphp/php-cs-fixer": ">=2.13 <3.0.0",
+        "phpunit/phpunit": ">=7.3 <7.4",
+        "roave/security-advisories": "dev-master",
+        "suin/php-cs-fixer-rules": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Suin\\Playground\\": "./"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "git:configure": [
+            "git config core.commentchar '#'",
+            "@git:commit-template",
+            "cghooks update"
+        ],
+        "git:commit-template": "git config --add commit.template .gitmessage",
+        "qa:format": "php-cs-fixer fix --ansi",
+        "qa:format:preview": "php-cs-fixer fix --ansi --dry-run --diff --diff-format=udiff --verbose",
+        "qa:test": "phpdbg -qrr vendor/bin/phpunit --colors=always --testdox",
+        "qa:check": [
+            "@qa:format:preview",
+            "@qa:test"
+        ],
+        "post-install-cmd": "cghooks add --ignore-lock",
+        "post-update-cmd": "@git:configure"
+    },
+    "scripts-descriptions": {
+        "git:configure": "Configures git settings.",
+        "git:commit-template": "Installs git commit template.",
+        "qa:format": "Fixes PHP coding style.",
+        "qa:format:preview": "Previews above.",
+        "qa:test": "Runs unit tests.",
+        "qa:check": "Runs code analysis and unit tests."
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": "composer qa:check",
+            "pre-push": "composer qa:check"
+        }
+    }
+}
