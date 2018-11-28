@@ -1,0 +1,19 @@
+{
+    "name": "suin/main-project",
+    "description": "A main project",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../LocalPackage",
+            "options": {
+                "symlink": false
+            }
+        }
+    ],
+    "require": {
+        "suin/local-package": "dev-master"
+    }
+}

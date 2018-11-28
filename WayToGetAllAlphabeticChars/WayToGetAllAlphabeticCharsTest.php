@@ -182,7 +182,7 @@ class WayToGetAllAlphabeticCharsTest extends TestCase
                 'Y',
                 'Z',
                 '[',
-                "\\",
+                '\\',
                 ']',
                 '^',
                 '_',
@@ -214,7 +214,7 @@ class WayToGetAllAlphabeticCharsTest extends TestCase
                 'y',
                 'z',
             ],
-            range('A', 'z')
+            \range('A', 'z')
         );
     }
 }

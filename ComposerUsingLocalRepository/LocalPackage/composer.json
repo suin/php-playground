@@ -1,0 +1,13 @@
+{
+    "name": "suin/local-package",
+    "description": "A local Composer package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Suin\\ComposerUsingLocalRepository\\LocalPackage\\": "src/"
+        }
+    }
+}
