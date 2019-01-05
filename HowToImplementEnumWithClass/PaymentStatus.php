@@ -7,50 +7,68 @@ namespace Suin\Playground\HowToImplementEnumWithClass;
 /**
  * 支払状況
  */
-abstract class PaymentStatus
+final class PaymentStatus
 {
+    private const PENDING = 0;
+
+    private const APPROVED = 1;
+
+    private const REJECTED = 2;
+
+    private const PAID = 3;
+
+    /**
+     * @var int
+     */
+    private $status;
+
     /**
      * Enumオブジェクトは、このクラスの静的メソッドからのみ作られることを保証するために、コン
      * ストラクタの可視性はprivateにする。
      */
-    private function __construct()
+    private function __construct(int $status)
     {
+        $this->status = $status;
     }
 
     /**
      * 「保留」の状況を表すオブジェクトを返す
      */
-    public static function pending(): Pending
+    public static function pending(): self
     {
-        return new Pending();
+        return new self(self::PENDING);
     }
 
     /**
      * 「承認済み」の状況を表すオブジェクトを返す
      */
-    public static function approved(): Approved
+    public static function approved(): self
     {
-        return new Approved();
+        return new self(self::APPROVED);
     }
 
     /**
      * 「支払い却下」の状況を表すオブジェクトを返す
      */
-    public static function rejected(): Rejected
+    public static function rejected(): self
     {
-        return new Rejected();
+        return new self(self::REJECTED);
     }
 
     /**
      * 「支払い済み」の状況を表すオブジェクトを返す
      */
-    public static function paid(): Paid
+    public static function paid(): self
     {
-        return new Paid();
+        return new self(self::PAID);
     }
 
     /**
      * 支払い済みもしくは支払い却下になったか
      */
-    abstract public function isCompleted(): bool;
+    public function isCompleted(): bool
+    {
+        return $this->status === self::REJECTED
+            || $this->status === self::PAID;
+    }
 }
