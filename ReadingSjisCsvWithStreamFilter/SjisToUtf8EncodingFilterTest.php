@@ -44,6 +44,21 @@ final class SjisToUtf8EncodingFilterTest extends TestCase
         self::assertSame(['かきくけこ', 'さしすせそ'], \fgetcsv($resource));
     }
 
+    /**
+     * @test
+     */
+    public function fgetcsv_doesnt_occur_5c_problem(): void
+    {
+        $utf8Value = '"表"';
+        $sjisValue = $this->getSjisValue($utf8Value);
+        self::assertSame(
+            '22 95 5c 22 ',
+            \chunk_split(\bin2hex($sjisValue), 2, ' ')
+        );
+        $resource = $this->createReadableResource($sjisValue);
+        self::assertSame(['表'], \fgetcsv($resource));
+    }
+
     private function getSjisValue(string $utf8Value): string
     {
         return \mb_convert_encoding($utf8Value, 'SJIS-win', 'UTF-8');
@@ -54,7 +69,7 @@ final class SjisToUtf8EncodingFilterTest extends TestCase
      */
     private function createReadableResource(string $content)
     {
-        $fp = \fopen('php://temp', 'wb');
+        $fp = \tmpfile();
         \fwrite($fp, $content);
         \rewind($fp);
         /** @noinspection UnusedFunctionResultInspection */
