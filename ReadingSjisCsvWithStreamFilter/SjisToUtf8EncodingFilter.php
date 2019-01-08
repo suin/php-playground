@@ -8,6 +8,7 @@ final class SjisToUtf8EncodingFilter extends \php_user_filter
 {
     /**
      * Buffer size limit (bytes)
+     *
      * @var int
      */
     private static $bufferSizeLimit = 1024;
@@ -72,7 +73,7 @@ final class SjisToUtf8EncodingFilter extends \php_user_filter
 
     private function assertBufferSizeIsSmallEnough(): void
     {
-        assert(
+        \assert(
             \strlen($this->buffer) <= self::$bufferSizeLimit,
             \sprintf(
                 'Streaming buffer size must less than or equal to %u bytes, but %u bytes allocated',
