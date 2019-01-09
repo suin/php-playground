@@ -20,6 +20,11 @@
             </exclude>
         </whitelist>
     </filter>
+    <groups>
+        <exclude>
+            <group>skip</group>
+        </exclude>
+    </groups>
     <logging>
         <log type="coverage-html"
              target="reports-coverage"/>
