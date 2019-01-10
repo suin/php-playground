@@ -9,6 +9,11 @@ My experimental codes of PHP.
 * [Way to get all alphabetic chars](./WayToGetAllAlphabeticChars)
     * Blog post: [PHP: アルファベットの文字リストをプログラム的に生成する方法 - Qiita](https://qiita.com/suin/items/8c53fb2d031d417ca0a8)
 
+### Arrays (配列)
+
+* [Convert `iterable` to `array`](./IterableToArray)
+    * Blog post: [PHP: iterable型はiterator_to_array()に渡しちゃいけない - Qiita](https://qiita.com/suin/items/5f76a3eeaca70a5c3ba8)
+
 ### Regular Expression (正規表現)
 
 * [How can I validate regular expression?](./HowCanIValidateRegex)
