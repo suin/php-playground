@@ -25,6 +25,8 @@ My experimental codes of PHP.
 
 * [How to convert and read Shift-JIS CSV with stream filter](./ReadingSjisCsvWithStreamFilter)
     * Blog post: [PHP: fgetcsvでもSJISのCSVをUTF-8として《安全》に読む方法(ストリームフィルタ使用) - Qiita](https://qiita.com/suin/items/3edfb9cb15e26bffba11)
+* [`fgetcsv` options: `SKIP_EMPTY`. `READ_AHEAD`, `DROP_NEW_LINE` and `$escape`](./FgetcsvOptions)
+    * Blog post: not yet
 
 ### Design Patterns of Object-Oriented (オブジェクト指向)
 
