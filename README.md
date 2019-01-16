@@ -14,6 +14,11 @@ My experimental codes of PHP.
 * [Convert `iterable` to `array`](./IterableToArray)
     * Blog post: [PHP: iterable型はiterator_to_array()に渡しちゃいけない - Qiita](https://qiita.com/suin/items/5f76a3eeaca70a5c3ba8)
 
+### File (ファイル)
+
+* [Error handling of `rename` function](./RenameErrorHandling)
+    * Blog post: not yet
+
 ### Regular Expression (正規表現)
 
 * [How can I validate regular expression?](./HowCanIValidateRegex)
