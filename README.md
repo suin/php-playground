@@ -14,6 +14,11 @@ My experimental codes of PHP.
 * [Convert `iterable` to `array`](./IterableToArray)
     * Blog post: [PHP: iterable型はiterator_to_array()に渡しちゃいけない - Qiita](https://qiita.com/suin/items/5f76a3eeaca70a5c3ba8)
 
+### Function (関数)
+
+* [Does PHP check argument count?](./ArgumentCountCheck)
+    * Blog post: [PHPは引数が足りないときはエラーになるが、引数が多いぶんには何も言わない - Qiita](https://qiita.com/suin/items/cffe65aed89935572016)
+
 ### File (ファイル)
 
 * [Error handling of `rename` function](./RenameErrorHandling)
