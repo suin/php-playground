@@ -23,6 +23,8 @@ My experimental codes of PHP.
 
 * [Error handling of `rename` function](./RenameErrorHandling)
     * Blog post: not yet
+* [How to create file with given size](./CreateFileWithGivenSize)
+    * [PHP: 128MBなど巨大なダミーファイルを生成する方法 - Qiita](https://qiita.com/suin/items/8eb3bef87e346a4747c6)
 
 ### Regular Expression (正規表現)
 
