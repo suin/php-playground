@@ -14,8 +14,7 @@ final class FileBySizeCreator
         int $megabyte
     ): void {
         $fp = \fopen($filename, 'wb');
-        \fseek($fp, $this->megabyteToByte($megabyte) - 1, \SEEK_CUR);
-        \fwrite($fp, "\0");
+        \ftruncate($fp, $this->megabyteToByte($megabyte));
         \fclose($fp);
     }
 
