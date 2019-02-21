@@ -53,9 +53,11 @@ My experimental codes of PHP.
 * [How to implement multiplicity in type-safe way](./TypeSafeMultiplicity)
     * Blog post: [PHP:手軽なのに型安全。多重度[1..*]の制約を実装する裏ワザ - Qiita](https://qiita.com/suin/items/fb6859a06d2b63790be8)
 * [How to implement Builder Pattern](./BuilderPattern/No1Basic)
-    * Blog post: [PHP: Builderパターンの実装手順 - Qiita](https://qiita.com/suin/items/d8d4dc019d3beb428249)
+    * Blog post: [PHP: Builderパターンの実装手順 #1【基礎実装】 - Qiita](https://qiita.com/suin/items/d8d4dc019d3beb428249)
 * [How to implement Builder Fluent Interface](./BuilderPattern/No2FluentInterface)
-    * Blog post: [PHP: Builder Fluent Interfaceの実装方法 - Qiita](https://qiita.com/suin/items/888f59851f940ee97c3a)
+    * Blog post: [PHP: Builderパターンの実装手順 #2【Fluent Interface実装】 - Qiita](https://qiita.com/suin/items/888f59851f940ee97c3a)
+* [How to implement Immutable Builder](./BuilderPattern/No3ImmutableBuilder)
+    * Blog post: [PHP: Builderパターンの実装手順 #3【Immutable Builder実装】 - Qiita](https://qiita.com/suin/items/7594e8984efc96594cee)
 
 ### Composer
 
