@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file src="ArgumentCountCheck/ArgumentCountCheckTest.php">
+    <MissingParamType occurrences="2">
+      <code>$arg1</code>
+      <code>$arg2</code>
+    </MissingParamType>
+    <TooFewArguments occurrences="1">
+      <code>dyadicFunction</code>
+    </TooFewArguments>
+    <TooManyArguments occurrences="1">
+      <code>dyadicFunction</code>
+    </TooManyArguments>
+  </file>
+  <file src="BuilderPattern/No3ImmutableBuilder/EmailBuilder.php">
+    <MissingParamType occurrences="1">
+      <code>$value</code>
+    </MissingParamType>
+  </file>
+  <file src="BuilderPattern/No4RestrictInstantiation/Email.php">
+    <MissingClosureReturnType occurrences="1">
+      <code>function () {</code>
+    </MissingClosureReturnType>
+    <MixedArgument occurrences="1">
+      <code>\func_get_args()</code>
+    </MixedArgument>
+  </file>
+  <file src="BuilderPattern/No4RestrictInstantiation/EmailBuilder.php">
+    <MissingParamType occurrences="1">
+      <code>$value</code>
+    </MissingParamType>
+    <MixedInferredReturnType occurrences="1">
+      <code>Email</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1"/>
+  </file>
+  <file src="ComposerUsingLocalRepository/LocalPackage/vendor/composer/ClassLoader.php">
+    <DuplicateFunction occurrences="1">
+      <code>function includeFile($file)</code>
+    </DuplicateFunction>
+    <MissingParamType occurrences="1">
+      <code>$file</code>
+    </MissingParamType>
+    <MissingReturnType occurrences="1">
+      <code>includeFile</code>
+    </MissingReturnType>
+    <UnresolvableInclude occurrences="1">
+      <code>include $file</code>
+    </UnresolvableInclude>
+  </file>
+  <file src="ComposerUsingLocalRepository/LocalPackage/vendor/composer/autoload_real.php">
+    <MissingParamType occurrences="1">
+      <code>$class</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$loader</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>loadClassLoader</code>
+      <code>getLoader</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="6">
+      <code>\Composer\Autoload\ComposerStaticInit4bc67025c84bd06bc7d16c3302cd394f::getInitializer($loader)</code>
+      <code>$namespace</code>
+      <code>$path</code>
+      <code>$namespace</code>
+      <code>$path</code>
+      <code>$classMap</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="5">
+      <code>$map</code>
+      <code>$path</code>
+      <code>$map</code>
+      <code>$path</code>
+      <code>$classMap</code>
+    </MixedAssignment>
+  </file>
+  <file src="ComposerUsingLocalRepository/LocalPackage/vendor/composer/autoload_static.php">
+    <InaccessibleProperty occurrences="2">
+      <code>$loader-&gt;prefixLengthsPsr4</code>
+      <code>$loader-&gt;prefixDirsPsr4</code>
+    </InaccessibleProperty>
+    <MissingClosureReturnType occurrences="1">
+      <code>function () use ($loader) {</code>
+    </MissingClosureReturnType>
+    <MissingPropertyType occurrences="2">
+      <code>$prefixLengthsPsr4</code>
+      <code>$prefixDirsPsr4</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="1">
+      <code>getInitializer</code>
+    </MissingReturnType>
+  </file>
+  <file src="ComposerUsingLocalRepository/MainProject/main.php">
+    <ForbiddenCode occurrences="1">
+      <code>\var_dump(new LibraryClass())</code>
+    </ForbiddenCode>
+  </file>
+  <file src="ComposerUsingLocalRepository/MainProject/vendor/composer/ClassLoader.php">
+    <DuplicateClass occurrences="1">
+      <code>class ClassLoader</code>
+    </DuplicateClass>
+  </file>
+  <file src="ComposerUsingLocalRepository/MainProject/vendor/composer/autoload_real.php">
+    <MissingParamType occurrences="1">
+      <code>$class</code>
+    </MissingParamType>
+    <MissingPropertyType occurrences="1">
+      <code>$loader</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="2">
+      <code>loadClassLoader</code>
+      <code>getLoader</code>
+    </MissingReturnType>
+    <MixedArgument occurrences="6">
+      <code>\Composer\Autoload\ComposerStaticInit49c7bc8f85f2ef0af58c05c3ec070595::getInitializer($loader)</code>
+      <code>$namespace</code>
+      <code>$path</code>
+      <code>$namespace</code>
+      <code>$path</code>
+      <code>$classMap</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="5">
+      <code>$map</code>
+      <code>$path</code>
+      <code>$map</code>
+      <code>$path</code>
+      <code>$classMap</code>
+    </MixedAssignment>
+  </file>
+  <file src="ComposerUsingLocalRepository/MainProject/vendor/composer/autoload_static.php">
+    <InaccessibleProperty occurrences="2">
+      <code>$loader-&gt;prefixLengthsPsr4</code>
+      <code>$loader-&gt;prefixDirsPsr4</code>
+    </InaccessibleProperty>
+    <MissingClosureReturnType occurrences="1">
+      <code>function () use ($loader) {</code>
+    </MissingClosureReturnType>
+    <MissingPropertyType occurrences="2">
+      <code>$prefixLengthsPsr4</code>
+      <code>$prefixDirsPsr4</code>
+    </MissingPropertyType>
+    <MissingReturnType occurrences="1">
+      <code>getInitializer</code>
+    </MissingReturnType>
+  </file>
+  <file src="ComposerUsingLocalRepository/MainProject/vendor/suin/local-package/src/LibraryClass.php">
+    <DuplicateClass occurrences="1">
+      <code>final class LibraryClass</code>
+    </DuplicateClass>
+  </file>
+  <file src="CreateFileWithGivenSize/FileBySizeCreatorTest.php">
+    <ImplicitToStringCast occurrences="1">
+      <code>$this-&gt;directory</code>
+    </ImplicitToStringCast>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>$directory</code>
+    </PropertyNotSetInConstructor>
+  </file>
+  <file src="FgetcsvOptions/FgetcsvOptionsTest.php">
+    <MissingPropertyType occurrences="1">
+      <code>$filename</code>
+    </MissingPropertyType>
+    <MixedArgument occurrences="7">
+      <code>$this-&gt;filename</code>
+      <code>$this-&gt;filename</code>
+      <code>$this-&gt;filename</code>
+      <code>$this-&gt;filename</code>
+      <code>$this-&gt;filename</code>
+      <code>$this-&gt;filename</code>
+      <code>$this-&gt;filename</code>
+    </MixedArgument>
+  </file>
+  <file src="HowCanIValidateRegex/HowCanIValidateRegexTest.php">
+    <MissingClosureParamType occurrences="2">
+      <code>$severity</code>
+      <code>$message</code>
+    </MissingClosureParamType>
+    <MixedArgument occurrences="1">
+      <code>$message</code>
+    </MixedArgument>
+    <MixedTypeCoercion occurrences="3"/>
+  </file>
+  <file src="HowToMockTheDateTime/Problem/Coupon.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>return $this-&gt;expirationDate;</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\DateTimeImmutable</code>
+    </InvalidReturnType>
+    <MismatchingDocblockParamType occurrences="1">
+      <code>DateTime</code>
+    </MismatchingDocblockParamType>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>$expirationDate</code>
+    </PropertyNotSetInConstructor>
+  </file>
+  <file src="HowToMockTheDateTime/Problem/CouponIssuer.php">
+    <InvalidArgument occurrences="1">
+      <code>new \DateTimeImmutable('+1 week')</code>
+    </InvalidArgument>
+  </file>
+  <file src="HowToMockTheDateTime/Solution/Coupon.php">
+    <InvalidReturnStatement occurrences="1">
+      <code>return $this-&gt;expirationDate;</code>
+    </InvalidReturnStatement>
+    <InvalidReturnType occurrences="1">
+      <code>\DateTimeImmutable</code>
+    </InvalidReturnType>
+    <MismatchingDocblockParamType occurrences="1">
+      <code>DateTime</code>
+    </MismatchingDocblockParamType>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>$expirationDate</code>
+    </PropertyNotSetInConstructor>
+  </file>
+  <file src="HowToMockTheDateTime/Solution/CouponIssuer.php">
+    <InvalidArgument occurrences="1">
+      <code>$this-&gt;systemClock-&gt;now()-&gt;modify('+1 week')</code>
+    </InvalidArgument>
+  </file>
+  <file src="IterableToArray/IterableToArrayTest.php">
+    <InvalidArgument occurrences="2">
+      <code>$this-&gt;arrayIterable()</code>
+      <code>$this-&gt;generatorIterable()</code>
+    </InvalidArgument>
+  </file>
+  <file src="PhpStormMetaExample/ClientCode.php">
+    <MixedAssignment occurrences="1">
+      <code>$doublyLinkedList</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="2">
+      <code>format</code>
+      <code>top</code>
+    </MixedMethodCall>
+  </file>
+  <file src="PhpStormMetaExample/InstanceCreator.php">
+    <InvalidStringClass occurrences="1">
+      <code>new $class()</code>
+    </InvalidStringClass>
+  </file>
+  <file src="PhpStormMetaExample/SplCreator.php">
+    <MissingReturnType occurrences="1">
+      <code>create</code>
+    </MissingReturnType>
+  </file>
+  <file src="PhpUnitDataProviderPerformance/UsingLoopTest.php">
+    <MixedAssignment occurrences="1">
+      <code>$value</code>
+    </MixedAssignment>
+  </file>
+  <file src="ReadingSjisCsvWithStreamFilter/SjisToUtf8EncodingFilter.php">
+    <MixedOperand occurrences="2">
+      <code>$bucket-&gt;data</code>
+      <code>$consumed</code>
+    </MixedOperand>
+  </file>
+  <file src="RenameErrorHandling/RenameErrorHandlingTest.php">
+    <ImplicitToStringCast occurrences="8">
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+      <code>$this-&gt;testDirectory</code>
+    </ImplicitToStringCast>
+    <InvalidArgument occurrences="1"/>
+    <PossiblyInvalidMethodCall occurrences="1">
+      <code>purgeOnPass</code>
+    </PossiblyInvalidMethodCall>
+    <PossiblyNullReference occurrences="1">
+      <code>getMessage</code>
+    </PossiblyNullReference>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>$testDirectory</code>
+    </PropertyNotSetInConstructor>
+  </file>
+  <file src="TestingService/TestDirectory.php">
+    <PossiblyNullOperand occurrences="1">
+      <code>$testCaseName</code>
+    </PossiblyNullOperand>
+  </file>
+  <file src="TypeSafeMultiplicity/Orthodox/Message.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>$recipient instanceof Recipient</code>
+    </DocblockTypeContradiction>
+  </file>
+  <file src="TypeSafeMultiplicity/TypeSafe/Profile.php">
+    <MissingConstructor occurrences="1">
+      <code>$hobbies</code>
+    </MissingConstructor>
+    <MixedTypeCoercion occurrences="1">
+      <code>\func_get_args()</code>
+    </MixedTypeCoercion>
+  </file>
+</files>

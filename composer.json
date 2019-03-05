@@ -22,7 +22,8 @@
         "friendsofphp/php-cs-fixer": ">=2.13 <3.0.0",
         "phpunit/phpunit": ">=7.3 <7.4",
         "roave/security-advisories": "dev-master",
-        "suin/php-cs-fixer-rules": "^1.2"
+        "suin/php-cs-fixer-rules": "^1.2",
+        "vimeo/psalm": "^3.1"
     },
     "autoload": {
         "psr-4": {
@@ -41,9 +42,11 @@
         "git:commit-template": "git config --add commit.template .gitmessage",
         "qa:format": "php-cs-fixer fix --ansi",
         "qa:format:preview": "php-cs-fixer fix --ansi --dry-run --diff --diff-format=udiff --verbose",
+        "qa:psalm": "psalm --show-info=false",
         "qa:test": "phpdbg -qrr vendor/bin/phpunit --colors=always --testdox",
         "qa:check": [
             "@qa:format:preview",
+            "@qa:psalm",
             "@qa:test"
         ],
         "post-install-cmd": "cghooks add --ignore-lock",
@@ -54,6 +57,7 @@
         "git:commit-template": "Installs git commit template.",
         "qa:format": "Fixes PHP coding style.",
         "qa:format:preview": "Previews above.",
+        "qa:psalm": "Analyze PHP code by Psalm.",
         "qa:test": "Runs unit tests.",
         "qa:check": "Runs code analysis and unit tests."
     },
