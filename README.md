@@ -60,6 +60,8 @@ My experimental codes of PHP.
     * Blog post: [PHP: Builderパターンの実装手順 #3【Immutable Builder実装】 - Qiita](https://qiita.com/suin/items/7594e8984efc96594cee)
 * [How to enforce object instantiation via Builder](./BuilderPattern/No4RestrictInstantiation)
     * Blog post: [PHP: Builderパターンの実装手順 #4【Builder経由での生成を強制する】 - Qiita](https://qiita.com/suin/items/feafae06c644f871f7b8)
+* [Result Pattern](./ResultPattern)
+    * Blog post: not yet
 
 ### Composer
 

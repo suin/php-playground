@@ -17,6 +17,7 @@
             <exclude>
                 <directory>ComposerUsingLocalRepository</directory>
                 <directory>vendor</directory>
+                <directory suffix="Test.php">*</directory>
             </exclude>
         </whitelist>
     </filter>
