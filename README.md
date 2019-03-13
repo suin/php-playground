@@ -62,6 +62,11 @@ My experimental codes of PHP.
     * Blog post: [PHP: Builderパターンの実装手順 #4【Builder経由での生成を強制する】 - Qiita](https://qiita.com/suin/items/feafae06c644f871f7b8)
 * [Result Pattern](./ResultPattern)
     * Blog post: not yet
+    
+### Domain-Driven Design (ドメイン駆動設計)
+
+* [Separate repository interface](./SeparateRepositoryInterface)
+    * My question: [oop - DDD: Why separate repository methods to different interfaces? - Stack Overflow](https://stackoverflow.com/questions/55133918/ddd-why-separate-repository-methods-to-different-interfaces)
 
 ### Composer
 
