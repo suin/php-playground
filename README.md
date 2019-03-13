@@ -39,6 +39,8 @@ My experimental codes of PHP.
     * Blog post: [PHP: fgetcsvでもSJISのCSVをUTF-8として《安全》に読む方法(ストリームフィルタ使用) - Qiita](https://qiita.com/suin/items/3edfb9cb15e26bffba11)
 * [`fgetcsv` options: `SKIP_EMPTY`. `READ_AHEAD`, `DROP_NEW_LINE` and `$escape`](./FgetcsvOptions)
     * Blog post: not yet
+* [Extensible CSV formatter](./ExtensibleCsvFormatter)
+    * An implementation of CSV formatter that can be extended behavior.
 
 ### Design Patterns of Object-Oriented (オブジェクト指向)
 

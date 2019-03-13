@@ -8,6 +8,7 @@ return PhpCsFixer\Config::create()
         [
             'error_suppression' => false,
             'phpdoc_to_comment' => false,
+            'phpdoc_add_missing_param_annotation' => false,
         ]
     ))
     ->setFinder(
