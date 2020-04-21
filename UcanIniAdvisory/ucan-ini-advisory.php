@@ -18,8 +18,8 @@ function extract_ini(string $markdown): array
         $matches['ini']
     );
     return [
-        'dev' => parse_ini_string($dev),
-        'prod' => parse_ini_string($prod),
+        'dev' => parse_ini_string($dev, false, INI_SCANNER_RAW),
+        'prod' => parse_ini_string($prod, false, INI_SCANNER_RAW),
     ];
 }
 
