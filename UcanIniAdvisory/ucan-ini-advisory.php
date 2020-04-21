@@ -96,7 +96,7 @@ function normalize_ini_value($value)
     return $value;
 }
 
-function print_errors(array $errors): void
+function report(string $env, array $errors): void
 {
     $outputs = [];
 
@@ -114,7 +114,11 @@ function print_errors(array $errors): void
     }
 
     echo implode("\n", $outputs);
-    echo sprintf("\n---\n\n以上、%u個の設定を提案をしました。\n", count($errors));
+    printf(
+        "\n---\n\n以上、%u個の「%s環境」向け設定を提案をしました。\n",
+        count($errors),
+        $env === 'dev' ? '開発' : '本番'
+    );
 }
 
 function indent(string $string, int $size): string
@@ -125,7 +129,7 @@ function indent(string $string, int $size): string
 
 function main(array $argv): void
 {
-    $env = $argv[1] ?? 'prod';
+    $env = $argv[1] ?? $_SERVER['INIENV'] ?? 'prod';
     if (!in_array($env, ['dev', 'prod'])) {
         throw new RuntimeException(
             'The first argument must be `dev` or `prod`'
@@ -137,7 +141,7 @@ function main(array $argv): void
     $ini = extract_ini($ucanlabsAwesomePost);
     $descriptions = extract_ini_descriptions($ucanlabsAwesomePost);
     $errors = check_ini($ini[$env], $descriptions);
-    print_errors($errors);
+    report($env, $errors);
 }
 
 main($argv);
